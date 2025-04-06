@@ -26,6 +26,8 @@ Using data that includes information about the phyiscs of the pitch such as laun
 
 ## What We will Learn
 
+We aim to gain insights into the factors that influence umpire decision-making and the presence of potential bias in strike zone calls. By analyzing pitch characteristics, game situations, and player demographics, we hope to uncover patterns that reveal when and why umpires are more likely to make incorrect calls. Ideally, we could determine the ways in which cause umpire's unfairly call pitches or potentially how miscalled pitches can alter the outcome of games. 
+
 ## Risk Statement
 
 ## Ethics Statement
