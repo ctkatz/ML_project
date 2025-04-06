@@ -28,4 +28,13 @@ bias will be evident.
 
 ## Ethics Statement
 
+Umpires, players and baseball fans and executives have the potential to benefit.
+At the same time, if umpires are biased, they would be harmed because of this analysis
+because they could be at risk of replacement. The world will be an overall better place
+because we will be able to understand and limit bias in the world at baseball. 
+- Missed calls by umpires are predictable by features including pitch location, race, team and game
+situation.
+-The world is a better place when baseball games are called more accuratley and 
+umpires miss fewer calls. 
+
 ## Tentative Timeline
