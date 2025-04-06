@@ -53,3 +53,4 @@ umpires miss fewer calls.
 **Last couple of weeks**
 - Implement the model we decided on for classification 
 - Audit the model for bias using different features in the dataset (point in game, player demographics, game situation, etc.)
+- Create presentation
