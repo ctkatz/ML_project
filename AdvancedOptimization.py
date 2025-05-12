@@ -77,7 +77,7 @@ class LogisticRegression(LinearModel):
         s = self.score(X)
         sig_s = self.sig(s)
         gradient = (sig_s - y).unsqueeze(1) * X
-        return gradient.mean(dim=0)
+        return gradient.mean(dim = 0)
 
     def hessian(self, X):
         """
