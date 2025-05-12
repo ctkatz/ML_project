@@ -33,6 +33,24 @@ class LinearModel:
         """
         s = self.score(X)
         return (s >= 0).float()
+    
+    def prob(self, X):
+        """
+        Predict the probability estimates for the classes.
+
+        Args:
+            X (Tensor): Feature matrix of shape (n_samples, n_features).
+
+        Returns:
+            Tensor: Probability estimates of shape (n_samples, 2).
+                    First column is P(y = 0), second column is P(y = 1).
+        """
+        s = self.score(X)
+        prob_1 = self.sig(s)
+        prob_0 = 1 - prob_1
+        
+        # Concatenate the probabilities
+        return torch.stack((prob_0, prob_1), dim = 1)
 
 class LogisticRegression(LinearModel):
     def sig(self, s):
