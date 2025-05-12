@@ -21,18 +21,21 @@ class LinearModel:
 
         return X @ self.w
 
-    def predict(self, X):
+    def predict(self, X, threshold = 0.5):
         """
-        Make binary predictions based on the sign of the score.
+        Make binary predictions based on the sigmoid of the score.
 
         Args:
             X (Tensor): Feature matrix of shape (n_samples, n_features).
+            threshold (float): Decision boundary threshold.
 
         Returns:
             Tensor: Binary predictions in {0.0, 1.0}, shape (n_samples,).
         """
         s = self.score(X)
-        return (s >= 0).float()
+        probs = self.sig(s)  # Apply the sigmoid activation
+        return (probs >= threshold).float()
+
     
     def prob(self, X):
         """
